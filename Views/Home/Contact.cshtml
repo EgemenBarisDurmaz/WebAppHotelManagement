@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "Contact";
+}
+
+<h2 style="margin-top:40px">We are happy to answer your questions!</h2>
+
+<head>
+   
+    <link href="@Url.Content("~/css/contact.css")" rel="stylesheet"type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <section id="contact-form">
+        <h2 style="margin:50px 10px 10px 160px">Contact Form</h2>
+        <form id="contact" name="contact" accept-charset="utf-8" action="mailto:egemendrmz@gmail.com" method="get">
+            <label><span>Name</span><input name="name" type="text" placeholder="Name" /></label>
+            <label><span>Email</span><input name="email" type="email" placeholder="Email" /></label>
+            <label><span>Message</span><textarea name="message" placeholder="Message"></textarea></label>
+            <input name="submit" type="submit" value="Send" />
+        </form>      
+    </section>
+</body>
+
+    
+

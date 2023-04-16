@@ -1,0 +1,13 @@
+﻿body {
+    background-image: url("../RoomImages/hotel2.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+}
+
+table {
+    background-color: #d7d5d5;
+    border:double;
+}

@@ -1,0 +1,11 @@
+﻿body {
+    background-image: url("../RoomImages/hotels.jpg");
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-repeat: no-repeat;
+}
+table{
+    background-color: #b2a5a5;
+}

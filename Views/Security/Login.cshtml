@@ -1,0 +1,43 @@
+﻿@model WebAppHotelManagement.Models.Users
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <link href="@Url.Content("~/css/login.css")" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery-1.12.4.min.js"></script>
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <title>Login</title>
+
+</head>
+<body>
+    <div class="login">
+        <h1> Welcome to Hotel Management System </h1>
+
+        <form method="post">
+            @ViewBag.Mesaj
+            @using (Html.BeginForm("Login", "Security", FormMethod.Post))
+            {
+                <div class="form-group">
+                    <input name="userName" type="text" placeholder="Kullanıcı Adı" class="form-group" />
+                </div>
+                <div class="form-group">
+                    <input name="password" type="password" placeholder="Parola" class="form-group" />
+                </div>
+                <input type="submit" class="float" value="Login" />
+
+            }
+        </form>
+        <button onclick="window.location.href='/User/AddOrEdit'">Register Now</button>
+
+    </div>
+</body>
+</html >
